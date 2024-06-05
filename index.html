@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archive</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function getVideoSource() {
+            const baseUrl = "https://polonium.stream.voidboost.cc/6330067d0d9fdf9270213f60ecb67937:2024052316:NlI5RTdLd1ZSTTd4R2owZjlLUi9McGNXWERjUGhyRXl5Q2dXbTVtdGN0MmVXbXhGZjBiRUtXZk5VajJiZWxQU1VjNmZZTkdrSi9WbW5MQ1M4dmFhdWorS1MvTUxRTHV0L21hdm8vWHRMeEE9/1/4/3/7/6/1/qub3i.mp4";
+            const timestamp = new Date().getTime();
+            return `${baseUrl}?v=${timestamp}`;
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const videoElement = document.querySelector("video source");
+            videoElement.src = getVideoSource();
+            videoElement.parentElement.load();
+        });
+    </script>
+</head>
+<body>
+    <div id="gallery">
+        <div class="media-container">
+            <div class="inner-container">
+                
+            </div>
+            <div class="info">
+                <h1><b>Work With Us</b></h1>
+                <div class="rating">
+                    <b>Рейтинг</b>
+                    <b><a href="https://mega.nz/folder/MK0R2LTR#a8kq5vvLx4NCzRD5gb34qg">IMDb</a></b>: 
+                    <b>7.3</b> <i>(35 908)</i>
+                </div>
+                <div class="lists">
+                    <b>Входит в списки:</b><br>
+                    <i>Лучшие драмы 2020</i><br>
+                    <i>Лучшие биографические фильмы 2020</i><br>
+                    <i>Лучшие зарубежные фильмы 2020</i><br>
+                </div>
+                <div class="slogan">
+                    <b>Слоган:	</b>
+                    <i>«Они построили империю, которую никто не смог»</i>
+                </div>
+                <div class="date">
+                    <b>Дата выхода:	</b>
+                    <i>6 марта 2020 года</i>
+                </div>
+                <div class="country">
+                    <b>Страна:	</b>
+                    <i>США</i>
+                </div>
+            </div>                                
+        </div>
+    </div>
+    <div id="lightbox" class="hidden">
+        <span id="close">×</span>
+        <div id="lightbox-content"></div>
+        <div id="lightbox-caption"></div>
+    </div>
+</body>
+</html>
